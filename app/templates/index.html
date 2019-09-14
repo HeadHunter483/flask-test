@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h1>{{ _('This is %(title)s page', title=title) }}</h1>
+  </div>
+  <hr>
+  <div class="row">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-info" role="alert">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  </div>
+  {% if not current_user.is_anonymous %}
+  <div class="row">
+    <h2>{{ _('Hi, %(username)s', username=current_user.username) }}!</h2>
+  </div>
+  {% if form %}
+    {{ wtf.quick_form(form) }}
+<!--  <form action="" method="POST">-->
+<!--    {{ form.hidden_tag() }}-->
+<!--    <p>-->
+<!--      {{ form.post.label }}<br>-->
+<!--      {{ form.post(cols=32, rows=4) }}<br>-->
+<!--      {% for error in form.post.errors %}-->
+<!--      <span style="color: red">[{{ error }}]</span>-->
+<!--      {% endfor %}-->
+<!--    </p>-->
+<!--    <p>{{ form.submit() }}</p>-->
+<!--  </form>-->
+  {% endif %}
+  {% endif %}
+  <div>
+    {% if posts %}
+      {% for post in posts %}
+        {% include '_post.html' %}
+      {% endfor %}
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous{% if not prev_url %} disabled{% endif %}">
+            <a href="{{ prev_url or '#' }}">
+              <span aria-hidden="true">&larr;</span> {{ _('Newer posts') }}
+            </a>
+          </li>
+          <li class="next{% if not next_url %} disabled{% endif %}">
+            <a href="{{ next_url or '#' }}">
+              {{ _('Older posts') }} <span aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    {% else %}
+      <p>{{ _('No posts yet.') }}</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

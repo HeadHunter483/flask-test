@@ -1,0 +1,18 @@
+<table class="table table-hover">
+  <tr>
+    <td width="70px">
+      <a href="{{ url_for('accounts.user', username=post.author.username) }}">
+        <img class="img-rounded" src="{{ post.author.avatar(32) }}">
+      </a>
+    </td>
+    <td>
+      {% set user_link %}
+      <a class="mark" href="{{ url_for('accounts.user', username=post.author.username) }}">
+        {{post.author.username}}
+      </a>
+      {% endset %}
+      {{ _('%(username)s said %(when)s', username=user_link, when=moment(post.timestamp).fromNow()) }}:<br>
+      {{post.body}}
+    </td>
+  </tr>
+</table>
