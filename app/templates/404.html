@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <h1>
+    This page cannot be found. You will certainly be lucky with
+    <a href="{{ url_for('home.index') }}">this one</a>.
+  </h1>
+</div>
+{% endblock %}

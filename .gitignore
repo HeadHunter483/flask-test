@@ -57,6 +57,9 @@ local_settings.py
 db.sqlite3
 
 # Flask stuff:
+.idea/
+.vscode/
+logs/
 instance/
 .webassets-cache
 

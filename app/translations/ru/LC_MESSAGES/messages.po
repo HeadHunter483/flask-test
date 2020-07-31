@@ -1,0 +1,213 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-09-07 13:42+0300\n"
+"PO-Revision-Date: 2019-09-07 13:43+0300\n"
+"Last-Translator: \n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+"X-Generator: Poedit 2.2.3\n"
+
+#: app/__init__.py:66
+msgid "Please log in to access this page."
+msgstr "Пожалуйста, войдите в систему, чтобы получить доступ к этой странице."
+
+#: app/forms/edit_profile.py:10 app/forms/login.py:8
+#: app/forms/registration.py:11
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: app/forms/edit_profile.py:11
+msgid "About me"
+msgstr "О себе"
+
+#: app/forms/edit_profile.py:13 app/forms/post_form.py:11
+msgid "Submit"
+msgstr "Запрос"
+
+#: app/forms/edit_profile.py:24
+msgid "This username is already taken. Please use another."
+msgstr "Это имя пользователя уже занято. Пожалуйста, выберите другое."
+
+#: app/forms/login.py:9 app/forms/registration.py:13
+msgid "Password"
+msgstr "Пароль"
+
+#: app/forms/login.py:10
+msgid "Remember Me"
+msgstr "Запомнить меня"
+
+#: app/forms/login.py:11 app/views/accounts.py:28
+msgid "Sign In"
+msgstr "Войти"
+
+#: app/forms/post_form.py:9
+msgid "Say something"
+msgstr "Скажите что-нибудь"
+
+#: app/forms/registration.py:12
+msgid "Email"
+msgstr "Электронная почта"
+
+#: app/forms/registration.py:15
+msgid "Repeat Password"
+msgstr "Повторите пароль"
+
+#: app/forms/registration.py:17 app/templates/registration.html:6
+#: app/views/accounts.py:50
+msgid "Sign Up"
+msgstr "Регистрация"
+
+#: app/forms/registration.py:22
+msgid "Please use a different username."
+msgstr "Пожалуйста, используйте другое имя пользователя."
+
+#: app/forms/registration.py:27
+msgid "Please use a different email."
+msgstr "Пожалуйста, используйте другой адрес электронной почты."
+
+#: app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr "%(username)s сказал %(when)s"
+
+#: app/templates/about.html:5
+msgid "This is About page"
+msgstr "Это страница О нас"
+
+#: app/templates/index.html:7
+#, python-format
+msgid "This is %(title)s page"
+msgstr "Это страница %(title)s"
+
+#: app/templates/index.html:21
+#, python-format
+msgid "Hi, %(username)s"
+msgstr "Привет, %(username)s"
+
+#: app/templates/index.html:47 app/templates/user.html:48
+msgid "Newer posts"
+msgstr "Новые записи"
+
+#: app/templates/index.html:52 app/templates/user.html:51
+msgid "Older posts"
+msgstr "Старые записи"
+
+#: app/templates/index.html:58
+msgid "No posts yet."
+msgstr "Пока записей не было."
+
+#: app/templates/macros.html:4
+#, python-format
+msgid "%(text)s"
+msgstr "%(text)s"
+
+#: app/templates/registration.html:8
+msgid "Already have an account?"
+msgstr "Уже есть учетная запись?"
+
+#: app/templates/registration.html:10
+msgid "Sign in!"
+msgstr "Войдите!"
+
+#: app/templates/user.html:9
+#, python-format
+msgid "User : %(username)s"
+msgstr "Пользователь : %(username)s"
+
+#: app/templates/user.html:14
+#, python-format
+msgid "Last seen on: %(when)s"
+msgstr "Был в последний раз: %(when)s"
+
+#: app/templates/user.html:20
+msgid "Edit your profile"
+msgstr "Редактировать профиль"
+
+#: app/templates/user.html:27
+msgid "Follow"
+msgstr "Подписаться"
+
+#: app/templates/user.html:34
+msgid "Unfollow"
+msgstr "Отписаться"
+
+#: app/templates/user.html:54
+msgid "No posts."
+msgstr "Нет записей."
+
+#: app/views/accounts.py:21
+msgid "Invalid username or password"
+msgstr "Неверное имя пользователя или пароль"
+
+#: app/views/accounts.py:47
+msgid ""
+"Congratulations! You have successfully signed up! Now you can sign in to "
+"your account."
+msgstr ""
+"Поздравляем! Вы успешно зарегистрировались! Теперь вы можете войти в вашу "
+"учетную запись."
+
+#: app/views/accounts.py:57
+#, python-format
+msgid "%(username)s's Profile"
+msgstr "Профиль пользователя %(username)s"
+
+#: app/views/accounts.py:78
+msgid "Your changes have been saved."
+msgstr "Ваши изменения были сохранены."
+
+#: app/views/accounts.py:83
+msgid "Edit Profile"
+msgstr "Редактирование профиля"
+
+#: app/views/accounts.py:92 app/views/accounts.py:108
+#, python-format
+msgid "User %(username)s not found."
+msgstr "Пользователь %(username)s не найден."
+
+#: app/views/accounts.py:95
+msgid "You cannot follow yourself."
+msgstr "Вы не можете подписаться на самого себя."
+
+#: app/views/accounts.py:99
+#, python-format
+msgid "You are following %(username)s!"
+msgstr "Вы подписались на %(username)s!"
+
+#: app/views/accounts.py:111
+msgid "You cannot unfollow yourself."
+msgstr "Вы не можете отписаться от самого себя."
+
+#: app/views/accounts.py:115
+#, python-format
+msgid "You are not following %(username)s."
+msgstr "Вы отписались от %(username)s."
+
+#: app/views/home.py:21
+msgid "Your post is now live!"
+msgstr "Запись опубликована!"
+
+#: app/views/home.py:30
+msgid "Home"
+msgstr "Главная"
+
+#: app/views/home.py:45
+msgid "Explore"
+msgstr "Все записи"
+
+#: app/views/home.py:52
+msgid "About"
+msgstr "О нас"
